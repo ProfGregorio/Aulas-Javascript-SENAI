@@ -6,8 +6,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <!-- Favicon  Tag -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>EXERCICIO 04 -  Integrando os recursos em JAVASCRIPT</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>EXERCÍCIO 04 -  Integrando os recursos em JAVASCRIPT</title>
     <meta name="description" content="Conteúdo das aulas de JS">
     <meta name="keywords" content="sites, web, frontend">
     <meta name="author" content="Gregorio Queiroz, gregorio@gregmaster.com.br, gregmasterbr@gmail.com">
@@ -21,6 +21,8 @@
         window.alert(nome);
         console.log(nome);
         let resposta = window.confirm("Você deseja sair da página? ");
+        console.log(resposta);
+        document.write("SEJA BEM-VINDO " + nome);
 
         if(resposta==true){
             setTimeout(() => {                
@@ -29,7 +31,8 @@
 
         }else{
             window.confirm(nome + ", você vai continuar nessa página!");
-        }
+        }        
+
     </script>
 </body>
-<html>
+</html>
