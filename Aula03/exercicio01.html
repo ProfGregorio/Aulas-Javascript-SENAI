@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  Tag -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>EXERCÍCIO 01 - JAVASCRIPT</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Gregorio Queiroz, gregorio@gregmaster.com.br, gregmasterbr@gmail.com">
+</head>
+<body>
+    <h1><mark>INTERAÇÃO JS COM FORMS</mark> DO HTML</h1>
+    <hr>
+    <input type="button" onclick="triste();" value="FELIZ">
+    <input type="button" onclick="feliz();" value="TRISTE">
+    <img src="img/emoji_triste.jpg" id="rosto" style="width: 350px;">    
+    <script >
+        function triste(){
+            var tag_img = document.getElementsByTagName('img')[0]
+            console.log(tag_img)
+            tag_img.src="img/emoji_feliz.webp";            
+        }
+        function feliz(){
+            var tag_img = document.getElementsByTagName('img')[0]
+            console.log(tag_img)
+            tag_img.src="img/emoji_triste.jpg";
+    
+        }
+    </script>
+</body>
+</html>
