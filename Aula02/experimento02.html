@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Favicon  Tag -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>DESAFIO 04 - JAVASCRIPT</title>
+    <meta name="description" content="Conteúdo das aulas de JS">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Gregorio Queiroz, gregorio@gregmaster.com.br, gregmasterbr@gmail.com">
+</head>
+<body>
+    <h1><mark>CRIANDO ELEMENTOS HTML (TR) </mark> DINAMICAMENTO ATRAVÉS DO JS</h1>    <hr>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody id="pokemonTableBody"></tbody>
+        </table>
+    </div>
+ 
+    <script>
+    fetch("https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/pokedex.json")
+    .then(response => response.json())
+    .then(pokemons => {
+
+        const tbody = document.getElementById("pokemonTableBody");
+
+        pokemons.slice(0, 20).forEach(pokemon => {
+
+            // linha
+            const tr = document.createElement("tr");
+
+            // coluna foto
+            const tdFoto = document.createElement("td");
+
+            const img = document.createElement("img");
+            img.src = pokemon.image.sprite;
+            img.width = 50;
+
+            tdFoto.appendChild(img);
+
+            // coluna nome
+            const tdNome = document.createElement("td");
+            tdNome.textContent = pokemon.name.english;
+
+            // coluna tipo
+            const tdTipo = document.createElement("td");
+            tdTipo.textContent = pokemon.type.join(", ");
+
+            // monta a linha
+            tr.appendChild(tdFoto);
+            tr.appendChild(tdNome);
+            tr.appendChild(tdTipo);
+
+            // adiciona na tabela
+            tbody.appendChild(tr);
+        });
+
+    });
+        
+
+    </script>
+
+    
+</body>
+<html>
