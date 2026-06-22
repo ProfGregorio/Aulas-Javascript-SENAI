@@ -4,6 +4,14 @@ Bem-vindo ao repositório de estudos de **JavaScript**!
 
 Este projeto reúne todas as aulas, exercícios e desafios desenvolvidos durante o curso, permitindo acompanhar a evolução do aprendizado de forma prática e organizada.
 
+
+![Status](https://img.shields.io/badge/Aulas-03-success)
+![HTML5](https://img.shields.io/badge/HTML5-Orange)
+![JavaScript](https://img.shields.io/badge/JavaScript-Yellow)
+
+🌐 **Projeto Online:** https://profgregorio.github.io/Aulas-Javascript-SENAI/
+
+Bem-vindo ao repositório de estudos de JavaScript...
 ---
 
 ## 🎯 Objetivo
@@ -237,6 +245,40 @@ em qualquer navegador moderno.
 Utilize o menu principal para acessar cada aula, exercício ou desafio.
 
 ---
+## 🌐 Projeto Publicado
+
+Uma versão online deste repositório está disponível através do GitHub Pages:
+
+👉 **Acesse:** https://profgregorio.github.io/Aulas-Javascript-SENAI/
+
+Utilize esta publicação como referência para navegar entre as aulas, visualizar os exercícios e acompanhar os exemplos apresentados durante o curso.
+
+---
+
+## 🚀 Publicação dos Exercícios
+
+Além de desenvolver os exercícios e desafios propostos, cada aluno deverá criar seu próprio repositório no GitHub e publicar seus projetos utilizando o GitHub Pages.
+
+### Objetivos
+
+* Praticar versionamento com Git e GitHub;
+* Aprender a publicar projetos na web;
+* Construir um portfólio de desenvolvimento desde o início do curso;
+* Compartilhar seus projetos com colegas, professores e recrutadores;
+* Registrar sua evolução ao longo das aulas.
+
+### Entrega
+
+Ao final de cada aula ou desafio, recomenda-se:
+
+1. Fazer commit das alterações;
+2. Atualizar o repositório remoto no GitHub;
+3. Publicar ou atualizar o GitHub Pages;
+4. Compartilhar o link do projeto quando solicitado.
+
+> Um desenvolvedor não apenas escreve código: ele organiza, versiona, documenta e publica seus projetos.
+
+---
 
 # 🎓 Metodologia das Aulas
 
@@ -271,7 +313,7 @@ Problemas práticos para desenvolver autonomia, criatividade e raciocínio lógi
 
 **Gregorio Queiroz**
 
-Desenvolvedor Front-End e Instrutor de Programação.
+Desenvolvedor Full-Stack e Professor de Programação.
 
 ---
 
