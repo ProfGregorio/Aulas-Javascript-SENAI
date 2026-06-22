@@ -23,24 +23,28 @@
         <p>E para ajudar o aprendizado, é PRECISO praticar e exercitar</p>
     </div> 
     <script>
-   const tags_p = document.getElementsByTagName('p');
+        const tags_p = document.getElementsByTagName('p');
         console.log(tags_p);
         let tag_p_1 = tags_p[0];
         let tag_p_2 = tags_p[1];
         let tag_p_3 = tags_p[2];
-        
+        console.log(tag_p_1);
         tag_p_1.style.backgroundColor="purple";
         tag_p_1.style.color="white";
+        tag_p_1.style.textAlign="center";
+        tag_p_1.style.fontSize="25pt";
 
-        tag_p_2.style.textAlign="center"
+        tag_p_2.style.backgroundColor="orange";
+        tag_p_2.style.textAlign="center";
         tag_p_2.style.fontSize="30pt"
 
-        tag_p_3.style.background="yellow"
-        tag_p_3.style.textAlign="center"
-
+        tag_p_3.style.backgroundColor="yellow";
+        tag_p_3.style.textAlign="center";
+        
         tag_p_3.innerText = "A TURMA DO DEV É ESPETACULAR DEMAIS!"
 
-    </script>
+        document.write('<h2>UAAAU, <mark>JAVASCRIPT É MUITO LEGAL!</mark></h2>')
 
+    </script>
 </body>
-</html>    
+</html>
